@@ -5,6 +5,7 @@ import SeatGrid from "@/components/plan/SeatGrid";
 import SeatLegend from "@/components/plan/SeatLegend";
 import { Input } from "@/components/ui/input";
 import { ArrowLeft, PencilRuler } from "lucide-react";
+import ShareButton from "@/components/plan/ShareButton";
 import { format } from "date-fns";
 
 const key = (r, c) => `${r}-${c}`;
@@ -80,6 +81,7 @@ export default function Book() {
                         <p className="text-xs text-neutral-500 mb-1.5">Date</p>
                         <Input type="date" value={date} onChange={(e) => setDate(e.target.value)} className="rounded-full w-44" />
                     </div>
+                    <ShareButton spaceId={spaceId} />
                     <Link
                         to={`/editor/${spaceId}`}
                         className="inline-flex items-center justify-center rounded-full border border-neutral-300 p-2.5 text-neutral-600 hover:bg-neutral-100 transition-colors"

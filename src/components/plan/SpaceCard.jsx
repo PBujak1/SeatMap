@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, PencilRuler } from "lucide-react";
+import ShareButton from "@/components/plan/ShareButton";
 
 export default function SpaceCard({ space, seatCount }) {
     return (
@@ -20,6 +21,7 @@ export default function SpaceCard({ space, seatCount }) {
                 >
                     Reserve a seat <ArrowUpRight className="w-4 h-4" />
                 </Link>
+                <ShareButton spaceId={space.id} />
                 <Link
                     to={`/editor/${space.id}`}
                     className="inline-flex items-center justify-center rounded-full border border-neutral-300 p-2.5 text-neutral-600 hover:bg-neutral-100 transition-colors"
