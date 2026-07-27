@@ -1,0 +1,33 @@
+{
+  "name": "Space",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "office",
+        "classroom",
+        "lab",
+        "other"
+      ],
+      "default": "office"
+    },
+    "description": {
+      "type": "string"
+    },
+    "rows": {
+      "type": "number",
+      "default": 6
+    },
+    "cols": {
+      "type": "number",
+      "default": 8
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

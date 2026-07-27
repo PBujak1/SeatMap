@@ -1,0 +1,36 @@
+{
+  "name": "Reservation",
+  "type": "object",
+  "properties": {
+    "space_id": {
+      "type": "string"
+    },
+    "seat_id": {
+      "type": "string"
+    },
+    "seat_label": {
+      "type": "string"
+    },
+    "space_name": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "attendee_name": {
+      "type": "string"
+    },
+    "attendee_email": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "space_id",
+    "seat_id",
+    "date"
+  ]
+}

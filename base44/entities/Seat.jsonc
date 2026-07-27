@@ -1,0 +1,32 @@
+{
+  "name": "Seat",
+  "type": "object",
+  "properties": {
+    "space_id": {
+      "type": "string"
+    },
+    "row": {
+      "type": "number"
+    },
+    "col": {
+      "type": "number"
+    },
+    "label": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "seat",
+        "teacher",
+        "blocked"
+      ],
+      "default": "seat"
+    }
+  },
+  "required": [
+    "space_id",
+    "row",
+    "col"
+  ]
+}
